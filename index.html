@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Madness Machine – Écran de Folie</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+    canvas {
+      display: block;
+      width: 100vw;
+      height: 100vh;
+    }
+    #warning {
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(255, 0, 0, 0.8);
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      z-index: 10;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="warning">
+    <strong>ATTENTION !</strong><br>
+    Ce contenu peut causer des crises d'épilepsie.<br>
+    Clique n'importe où pour fermer ce warning et lancer.
+  </div>
+
+  <canvas id="c"></canvas>
+
+  <script src="madness.js"></script>
+</body>
+</html>
